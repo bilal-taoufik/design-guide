@@ -1,0 +1,54 @@
+@use "../partials/functions" as f;
+@use "../partials/mixins" as m;
+
+@layer components {
+    .button {
+        display: flex;
+        width: fit-content;
+        height: f.rem(40);
+        align-items: center;
+        justify-content: center;
+        padding-right: f.rem(50);
+        padding-left: f.rem(50);
+        border-radius: f.rem(25);
+        font-weight: 500;
+        color: var(--white);
+        background: linear-gradient(225deg, var(--brand) 0%, var(--brand-dark) 100%);
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        line-height: inherit;
+
+        transition: background 0.5s ease;
+
+        &:hover {
+            background: linear-gradient(225deg, var(--brand) 100%, var(--brand-dark) 0%);
+        }
+
+        &.is-small {
+            height: auto;
+            padding: f.rem(11) f.rem(24);
+            justify-content: center;
+            align-items: center;
+        }
+
+        &.is-icon {
+            display: flex;
+            padding-right: f.rem(0);
+            padding-left: f.rem(0);
+            justify-content: center;
+            align-items: center;
+            gap: f.rem(12);
+            background-image: none;
+            color: var(--brand);
+            svg {
+                display: flex;
+                width: f.rem(24);
+                height: f.rem(24);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
