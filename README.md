@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/logo.png" alt="Design Guide Logo" width="120">
+  <img src="./DesignGuide/dist/assets/logo.png" alt="Design Guide Logo" width="120">
 </p>
 
 <h1 align="center">Design Guide SCSS</h1>
