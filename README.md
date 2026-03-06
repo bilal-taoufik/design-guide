@@ -1,33 +1,33 @@
-```{=html}
+```
 <p align="center">
 ```
-`<img src="/DesignGuide/dist/assets/logo.png" alt="Design Guide Logo" width="120">`{=html}
-```{=html}
+`<img src="/DesignGuide/dist/assets/logo.png" alt="Design Guide Logo" width="120">`
+```
 </p>
 ```
-```{=html}
+```
 <h1 align="center">
 ```
 Design Guide SCSS
-```{=html}
+```
 </h1>
 ```
-```{=html}
+```
 <p align="center">
 ```
 Design system réutilisable construit avec
-`<strong>`{=html}SCSS`</strong>`{=html} pour centraliser les styles,
+`<strong>`SCSS`</strong>` pour centraliser les styles,
 tokens, composants et bonnes pratiques front-end.
-```{=html}
+```
 </p>
 ```
-```{=html}
+```
 <p align="center">
 ```
-`<img src="https://img.shields.io/badge/SCSS-Design%20System-pink?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/Vite-Frontend%20Tool-646CFF?style=for-the-badge">`{=html}
-`<img src="https://img.shields.io/badge/Architecture-Scalable-blue?style=for-the-badge">`{=html}
-```{=html}
+`<img src="https://img.shields.io/badge/SCSS-Design%20System-pink?style=for-the-badge">`
+`<img src="https://img.shields.io/badge/Vite-Frontend%20Tool-646CFF?style=for-the-badge">`
+`<img src="https://img.shields.io/badge/Architecture-Scalable-blue?style=for-the-badge">`
+```
 </p>
 ```
 
