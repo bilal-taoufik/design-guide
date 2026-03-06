@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/assets/icon.png" />
     <title>Design Guide | Taoufik Agency</title>
-  <script type="module" crossorigin src="/assets/main-Bwx31qBq.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-qBHKCJdH.css">
+
+
+    <!-- <script
+        type="text/plain"
+        data-cookie-category="analytics"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+
+    <script type="text/plain" data-cookie-category="analytics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-XXXXXXXXXX");
+    </script> -->
+  <script type="module" crossorigin src="/assets/main-B8MD4uwC.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-IPJECKPo.css">
 </head>
 <body>
     <header>
@@ -1297,9 +1312,43 @@
                 </div>
             </section>
         </div>
+        <div class="cookie-modal" data-cookie-modal hidden>
+            <div class="cookie-modal_box">
+                <h3>Préférences cookies</h3>
+
+                <label class="cookie-toggle">
+                <input type="checkbox" checked disabled>
+                <span>Cookies nécessaires</span>
+                </label>
+
+                <label class="cookie-toggle">
+                <input type="checkbox" data-cookie-category="analytics">
+                <span>Mesure d'audience</span>
+                </label>
+
+                <label class="cookie-toggle">
+                <input type="checkbox" data-cookie-category="marketing">
+                <span>Marketing</span>
+                </label>
+
+                <div class="cookie-modal_actions">
+                <button type="button" class="button button-ghost" data-cookie-close>
+                    Fermer
+                </button>
+                <button type="button" class="button button-secondary" data-cookie-save="selected">
+                    Enregistrer
+                </button>
+                <button type="button" class="button" data-cookie-save="all">
+                    Tout accepter
+                </button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer-wrapper">
-        <div class="footer_component"></div>
+        <div class="footer_component">
+
+        </div>
     </footer>
 </body>
 </html>

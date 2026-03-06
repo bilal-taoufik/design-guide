@@ -2,6 +2,22 @@
 @use "../partials/functions" as f;
 
 @layer pages {
+    .styleguide_nav {
+        position: sticky;
+        top: f.rem(16);
+        z-index: 1000;
+        margin-top: f.rem(16);
+        padding: f.rem(16);
+        border-radius: f.rem(12);
+        background-color: var(--black);
+        .styleguide_nav-link {
+            padding: f.rem(8) f.rem(16);
+            border-radius: f.rem(4);
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+
     .styleguide_header {
         display: flex;
         flex-direction: column;
