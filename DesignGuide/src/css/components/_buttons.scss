@@ -13,7 +13,7 @@
         border-radius: f.rem(25);
         font-weight: 500;
         color: var(--white);
-        background: linear-gradient(225deg, var(--brand) 0%, var(--brand-dark) 100%);
+        background: var(--gradient-brand);
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -22,7 +22,7 @@
         transition: background 0.5s ease;
 
         &:hover {
-            background: linear-gradient(225deg, var(--brand) 100%, var(--brand-dark) 0%);
+            background: var(--gradient-brand);
         }
 
         &.is-small {

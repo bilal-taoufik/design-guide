@@ -2,5 +2,11 @@
 @use "../partials/mixins" as m;
 
 @layer components {
-    
+    .footer-wrapper {
+        overflow: hidden;
+        margin-top: auto;
+        .footer_component {
+            background-color: var(--white);
+        }
+    }
 }
