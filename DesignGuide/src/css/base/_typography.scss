@@ -168,19 +168,23 @@
 
     // Text Sizes
     .text-size-large {
-        font-size: f.rem(20);
+    font-size: clamp(f.rem(18), calc(1.056rem + 0.188vw), f.rem(20));
     }
+
     .text-size-medium {
-        font-size: f.rem(18);
+    font-size: clamp(f.rem(16), calc(0.956rem + 0.188vw), f.rem(18));
     }
+
     .text-size-regular {
-        font-size: f.rem(16);
+    font-size: clamp(f.rem(15), calc(0.915rem + 0.094vw), f.rem(16));
     }
+
     .text-size-small {
-        font-size: f.rem(14);
+    font-size: clamp(f.rem(13), calc(0.769rem + 0.094vw), f.rem(14));
     }
+
     .text-size-tiny {
-        font-size: f.rem(12);
+    font-size: clamp(f.rem(11), calc(0.644rem + 0.094vw), f.rem(12));
     }
 
 

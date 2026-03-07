@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/icon.png" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <title>Design Guide | Taoufik Agency</title>
 
+    <!-- Finsweet Cookie Consent -->
+    <script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js"></script>
 
-    <!-- <script
-        type="text/plain"
-        data-cookie-category="analytics"
+    <!-- Exemple scripts bloqués -->
+    <!--
+    <script
+        type="fs-cc"
+        fs-cc-categories="analytics"
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
     </script>
 
-    <script type="text/plain" data-cookie-category="analytics">
+    <script type="fs-cc" fs-cc-categories="analytics">
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag("js", new Date());
         gtag("config", "G-XXXXXXXXXX");
-    </script> -->
-  <script type="module" crossorigin src="/assets/main-B8MD4uwC.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-IPJECKPo.css">
+    </script>
+    -->
+    <!-- 
+    <script type="fs-cc" fs-cc-categories="marketing">
+        console.log("marketing cookies allowed");
+    </script>
+    -->
+  <script type="module" crossorigin src="/assets/main-x-Z8OYUT.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DM8NxUKV.css">
 </head>
 <body>
     <header>
@@ -33,15 +43,26 @@
             <section class="section_design-guide">
                 <div class="padding-global">
                     <div class="container-large">
+
+                        <div class="styleguide_nav">
+                            <a class="styleguide_nav-link" href="#typography">Typography</a>
+                            <a class="styleguide_nav-link" href="#colors">Colors</a>
+                            <a class="styleguide_nav-link" href="#effects">Effects</a>
+                            <a class="styleguide_nav-link" href="#ui-elements">UI Elements</a>
+                            <a class="styleguide_nav-link" href="#structure">Structure Classes</a>
+                        </div>
+
+
+
                         <!-- Logo + description -->
                         <div class="styleguide_header">
                             <div class="logo_svg">
                                 <a href="#">
                                     <svg width="242" height="121" viewBox="0 0 965 487" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M197.112 0L3.12325 110.702L0 117.295V371.667L198.153 486.88L397 370.973V110.702L197.112 0Z" fill="#C76A2A"/>
+                                    <path d="M197.112 0L3.12325 110.702L0 117.295V371.667L198.153 486.88L397 370.973V110.702L197.112 0Z" fill="#E96103"/>
                                     <path d="M198.153 486.88L397 370.973V110.702L197.112 0L3.12325 110.702L169.697 207.176L332.8 126.318V199.888L311.631 211.34C311.978 205.441 310.035 193.919 299.485 195.03L273.805 208.911V340.087C275.772 344.599 281.509 352.719 288.727 349.11C289.838 349.11 294.511 346.334 296.709 344.946V372.361L210.299 421.639V390.059C215.851 388.671 227.165 382.217 227.997 367.503V231.815L201.276 246.39C197.459 248.703 190.38 257.009 192.601 271.723L167.267 285.257C169.211 284.219 168.077 235.546 167.267 211.34L0 117.295V371.667L198.153 486.88Z" fill="#1C1C1C"/>
                                     <path d="M430.52 237.44L460.76 170.24H473.048L503.384 237.44H490.328L464.312 176.864H469.304L443.384 237.44H430.52ZM444.44 221.888L447.8 212.096H484.088L487.448 221.888H444.44ZM571.281 238.4C566.033 238.4 561.201 237.536 556.785 235.808C552.369 234.08 548.529 231.68 545.265 228.608C542.001 225.472 539.473 221.824 537.681 217.664C535.889 213.44 534.993 208.832 534.993 203.84C534.993 198.848 535.889 194.272 537.681 190.112C539.473 185.888 542.001 182.24 545.265 179.168C548.529 176.032 552.369 173.6 556.785 171.872C561.201 170.144 566.001 169.28 571.185 169.28C576.433 169.28 581.233 170.144 585.585 171.872C590.001 173.6 593.841 176.032 597.105 179.168C600.369 182.24 602.897 185.888 604.689 190.112C606.481 194.272 607.377 198.848 607.377 203.84C607.377 208.832 606.481 213.44 604.689 217.664C602.897 221.888 600.369 225.536 597.105 228.608C593.841 231.68 590.001 234.08 585.585 235.808C581.233 237.536 576.465 238.4 571.281 238.4ZM571.185 227.456C574.577 227.456 577.713 226.88 580.593 225.728C583.473 224.576 585.969 222.944 588.081 220.832C590.193 218.656 591.825 216.16 592.977 213.344C594.193 210.464 594.801 207.296 594.801 203.84C594.801 200.384 594.193 197.248 592.977 194.432C591.825 191.552 590.193 189.056 588.081 186.944C585.969 184.768 583.473 183.104 580.593 181.952C577.713 180.8 574.577 180.224 571.185 180.224C567.793 180.224 564.657 180.8 561.777 181.952C558.961 183.104 556.465 184.768 554.289 186.944C552.177 189.056 550.513 191.552 549.297 194.432C548.145 197.248 547.569 200.384 547.569 203.84C547.569 207.232 548.145 210.368 549.297 213.248C550.513 216.128 552.177 218.656 554.289 220.832C556.401 222.944 558.897 224.576 561.777 225.728C564.657 226.88 567.793 227.456 571.185 227.456ZM678.301 238.4C669.085 238.4 661.853 235.808 656.605 230.624C651.421 225.44 648.829 217.952 648.829 208.16V170.24H661.309V207.68C661.309 214.592 662.781 219.616 665.725 222.752C668.733 225.888 672.957 227.456 678.397 227.456C683.837 227.456 688.029 225.888 690.973 222.752C693.917 219.616 695.389 214.592 695.389 207.68V170.24H707.677V208.16C707.677 217.952 705.053 225.44 699.805 230.624C694.621 235.808 687.453 238.4 678.301 238.4ZM765.379 201.152H798.883V211.712H765.379V201.152ZM766.435 237.44H753.955V170.24H803.011V180.704H766.435V237.44ZM843.88 237.44V170.24H856.36V237.44H843.88ZM914.473 221.6L913.801 206.816L949.033 170.24H963.049L933.769 201.344L926.857 208.928L914.473 221.6ZM903.337 237.44V170.24H915.817V237.44H903.337ZM950.185 237.44L924.457 206.816L932.713 197.696L964.777 237.44H950.185Z" fill="#1C1C1C"/>
-                                    <line x1="430.989" y1="276.94" x2="705.989" y2="274.94" stroke="#C76A2A" stroke-width="3"/>
+                                    <line x1="430.989" y1="276.94" x2="705.989" y2="274.94" stroke="#E96103" stroke-width="3"/>
                                     <path d="M430.8 332.44L443.4 304.44H448.52L461.16 332.44H455.72L444.88 307.2H446.96L436.16 332.44H430.8ZM436.6 325.96L438 321.88H453.12L454.52 325.96H436.6ZM489.41 332.84C487.224 332.84 485.21 332.494 483.37 331.8C481.557 331.08 479.97 330.08 478.61 328.8C477.25 327.494 476.197 325.96 475.45 324.2C474.704 322.44 474.33 320.52 474.33 318.44C474.33 316.36 474.704 314.44 475.45 312.68C476.197 310.92 477.25 309.4 478.61 308.12C479.997 306.814 481.61 305.814 483.45 305.12C485.29 304.4 487.304 304.04 489.49 304.04C491.864 304.04 493.997 304.427 495.89 305.2C497.81 305.974 499.424 307.107 500.73 308.6L497.45 311.8C496.357 310.707 495.17 309.907 493.89 309.4C492.637 308.867 491.25 308.6 489.73 308.6C488.264 308.6 486.904 308.84 485.65 309.32C484.397 309.8 483.317 310.48 482.41 311.36C481.504 312.24 480.797 313.28 480.29 314.48C479.81 315.68 479.57 317 479.57 318.44C479.57 319.854 479.81 321.16 480.29 322.36C480.797 323.56 481.504 324.614 482.41 325.52C483.317 326.4 484.384 327.08 485.61 327.56C486.837 328.04 488.197 328.28 489.69 328.28C491.077 328.28 492.41 328.067 493.69 327.64C494.997 327.187 496.237 326.44 497.41 325.4L500.37 329.28C498.904 330.454 497.197 331.347 495.25 331.96C493.33 332.547 491.384 332.84 489.41 332.84ZM495.45 328.6V318.12H500.37V329.28L495.45 328.6ZM524.029 316.08H537.949V320.36H524.029V316.08ZM524.429 328.08H540.229V332.44H519.229V304.44H539.669V308.8H524.429V328.08ZM558.026 332.44V304.44H562.306L579.866 326H577.746V304.44H582.906V332.44H578.626L561.066 310.88H563.186V332.44H558.026ZM615.368 332.84C613.235 332.84 611.248 332.494 609.408 331.8C607.595 331.08 606.008 330.08 604.648 328.8C603.315 327.494 602.275 325.96 601.528 324.2C600.782 322.44 600.408 320.52 600.408 318.44C600.408 316.36 600.782 314.44 601.528 312.68C602.275 310.92 603.328 309.4 604.688 308.12C606.048 306.814 607.635 305.814 609.448 305.12C611.262 304.4 613.248 304.04 615.408 304.04C617.702 304.04 619.795 304.44 621.688 305.24C623.582 306.014 625.182 307.174 626.488 308.72L623.128 311.88C622.115 310.787 620.982 309.974 619.728 309.44C618.475 308.88 617.115 308.6 615.648 308.6C614.182 308.6 612.835 308.84 611.608 309.32C610.408 309.8 609.355 310.48 608.448 311.36C607.568 312.24 606.875 313.28 606.368 314.48C605.888 315.68 605.648 317 605.648 318.44C605.648 319.88 605.888 321.2 606.368 322.4C606.875 323.6 607.568 324.64 608.448 325.52C609.355 326.4 610.408 327.08 611.608 327.56C612.835 328.04 614.182 328.28 615.648 328.28C617.115 328.28 618.475 328.014 619.728 327.48C620.982 326.92 622.115 326.08 623.128 324.96L626.488 328.16C625.182 329.68 623.582 330.84 621.688 331.64C619.795 332.44 617.688 332.84 615.368 332.84ZM649.999 332.44V321.36L651.159 324.56L638.999 304.44H644.559L654.319 320.64H651.199L661.039 304.44H666.159L653.999 324.56L655.199 321.36V332.44H649.999Z" fill="#1C1C1C"/>
                                     </svg>
                                 </a>
@@ -585,7 +606,7 @@
 
                         
                         <!-- UI element -->
-                        <h1 id="effects" class="styleguide_heading">UI Elements</h1>
+                        <h1 id="ui-elements" class="styleguide_heading">UI Elements</h1>
 
 
                         <!-- Button -->
@@ -811,11 +832,10 @@
 
 
 
-                        <!-- UI element -->
+                        <!-- Structure Classes -->
                         <h1 id="structure" class="styleguide_heading">Structure Classes</h1>
 
 
-                        <!-- Structure classes -->
                         <div class="styleguide_subheading">
                             <p class="heading-style-h1-bold">Structure Classes</p>
                             <span class="styleguide_subheading-small">Defined and flexible core structure we can use on all or most pages.</span>
@@ -1312,37 +1332,153 @@
                 </div>
             </section>
         </div>
-        <div class="cookie-modal" data-cookie-modal hidden>
-            <div class="cookie-modal_box">
-                <h3>Préférences cookies</h3>
+        <div class="cookie-component">
+            <div fs-cc="banner" class="fs-cc-banner2_component">
+                <div class="fs-cc-banner2_container">
+                <div class="fs-cc-banner2_text">
+                    By clicking “Accept Cookies”, you consent to the storing of cookies on your device to enhance site navigation, analyze site usage, and support our marketing efforts.
+                </div>
 
-                <label class="cookie-toggle">
-                <input type="checkbox" checked disabled>
-                <span>Cookies nécessaires</span>
-                </label>
+                <div class="fs-cc-banner2_buttons-wrapper">
+                    <button fs-cc="open-preferences" type="button" class="button fs-cc-banner2_button is-secondary">
+                    Cookie Settings
+                    </button>
 
-                <label class="cookie-toggle">
-                <input type="checkbox" data-cookie-category="analytics">
-                <span>Mesure d'audience</span>
-                </label>
-
-                <label class="cookie-toggle">
-                <input type="checkbox" data-cookie-category="marketing">
-                <span>Marketing</span>
-                </label>
-
-                <div class="cookie-modal_actions">
-                <button type="button" class="button button-ghost" data-cookie-close>
-                    Fermer
-                </button>
-                <button type="button" class="button button-secondary" data-cookie-save="selected">
-                    Enregistrer
-                </button>
-                <button type="button" class="button" data-cookie-save="all">
-                    Tout accepter
-                </button>
+                    <button fs-cc="allow" type="button" class="button fs-cc-banner2_button">
+                    Accept Cookies
+                    </button>
+                </div>
                 </div>
             </div>
+
+            <div fs-cc="preferences" fs-cc-scroll="disable" class="fs-cc-prefs2_component">
+                <div class="fs-cc-prefs2_overlay" fs-cc="close"></div>
+
+                <div class="fs-cc-prefs2_form-wrapper">
+                <form id="cookie-preferences" class="fs-cc-prefs2_form">
+                    <button fs-cc="close" type="button" class="fs-cc-prefs2_close" aria-label="Close cookie preferences">
+                    <svg fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+                        <path d="M9.414 8l4.293-4.293-1.414-1.414L8 6.586 3.707 2.293 2.293 3.707 6.586 8l-4.293 4.293 1.414 1.414L8 9.414l4.293 4.293 1.414-1.414L9.414 8z"></path>
+                    </svg>
+                    </button>
+
+                    <div class="fs-cc-prefs2_content">
+                    <div class="fs-cc-prefs2_header">
+                        <h3 class="fs-cc-prefs2_title">Cookie preferences</h3>
+                        <p class="fs-cc-prefs2_text">
+                        Choose which cookies you want to allow. Essential cookies are required for the website to function properly.
+                        </p>
+                    </div>
+
+                    <div class="fs-cc-prefs2_option">
+                        <div class="fs-cc-prefs2_toggle-wrapper">
+                        <div>
+                            <div class="fs-cc-prefs2_label">Essential</div>
+                            <div class="fs-cc-prefs2_description">
+                            Necessary for the proper functioning of the website.
+                            </div>
+                        </div>
+                        <div class="fs-cc-prefs2_required">Required</div>
+                        </div>
+                    </div>
+
+                    <div class="fs-cc-prefs2_option">
+                        <div class="fs-cc-prefs2_toggle-wrapper">
+                        <div>
+                            <div class="fs-cc-prefs2_label">Marketing</div>
+                            <div class="fs-cc-prefs2_description">
+                            Used to deliver relevant ads and marketing campaigns.
+                            </div>
+                        </div>
+
+                        <label class="fs-cc-prefs2_checkbox-field" for="marketing-2">
+                            <input
+                            type="checkbox"
+                            name="marketing-2"
+                            id="marketing-2"
+                            fs-cc-checkbox="marketing"
+                            class="fs-cc-prefs2_checkbox-input"
+                            >
+                            <span class="fs-cc-prefs2_checkbox-ui"></span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="fs-cc-prefs2_option">
+                        <div class="fs-cc-prefs2_toggle-wrapper">
+                        <div>
+                            <div class="fs-cc-prefs2_label">Personalization</div>
+                            <div class="fs-cc-prefs2_description">
+                            Allows the site to remember your preferences and provide enhanced features.
+                            </div>
+                        </div>
+
+                        <label class="fs-cc-prefs2_checkbox-field" for="personalization-2">
+                            <input
+                            type="checkbox"
+                            name="personalization-2"
+                            id="personalization-2"
+                            fs-cc-checkbox="personalization"
+                            class="fs-cc-prefs2_checkbox-input"
+                            >
+                            <span class="fs-cc-prefs2_checkbox-ui"></span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="fs-cc-prefs2_option">
+                        <div class="fs-cc-prefs2_toggle-wrapper">
+                        <div>
+                            <div class="fs-cc-prefs2_label">Analytics</div>
+                            <div class="fs-cc-prefs2_description">
+                            Helps us understand how visitors interact with the website.
+                            </div>
+                        </div>
+
+                        <label class="fs-cc-prefs2_checkbox-field" for="analytics-2">
+                            <input
+                            type="checkbox"
+                            name="analytics-2"
+                            id="analytics-2"
+                            fs-cc-checkbox="analytics"
+                            class="fs-cc-prefs2_checkbox-input"
+                            >
+                            <span class="fs-cc-prefs2_checkbox-ui"></span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="fs-cc-prefs2_buttons-wrapper">
+                        <div class="fs-cc-prefs2_buttons-container">
+                        <button fs-cc="deny" type="button" class="button fs-cc-banner2_button is-secondary">
+                            Reject all cookies
+                        </button>
+
+                        <button fs-cc="allow" type="button" class="button fs-cc-banner2_button">
+                            Allow all cookies
+                        </button>
+                        </div>
+
+                        <button fs-cc="submit" type="submit" class="button fs-cc-banner2_button is-secondary">
+                        Save preferences
+                        </button>
+                    </div>
+                    </div>
+                </form>
+
+                <div class="w-form-done" tabindex="-1" role="region" aria-label="Cookie Preferences success">
+                    Your preferences have been saved.
+                </div>
+
+                <div class="w-form-fail" tabindex="-1" role="region" aria-label="Cookie Preferences failure">
+                    Something went wrong. Please try again.
+                </div>
+                </div>
+            </div>
+
+            <!-- <button fs-cc="open-preferences" type="button" class="cookie-settings-trigger button is-secondary">
+                Manage cookies
+            </button> -->
         </div>
     </main>
     <footer class="footer-wrapper">
@@ -1352,3 +1488,5 @@
     </footer>
 </body>
 </html>
+
+    
