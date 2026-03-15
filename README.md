@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./DesignGuide/dist/assets/img.png" alt="Design Guide Logo" width="120">
+  <img src="./DesignGuide/public/assets/img.png" alt="Design Guide Logo" width="120">
 </p>
 
 <h1 align="center">Design Guide SCSS</h1>
@@ -159,6 +159,11 @@ Cloner le repository
 
 ``` bash
 git clone https://github.com/bilal-taoufik/design-guide.git
+```
+Aller dans le projet
+
+``` bash
+cd design-guide/DesignGuide
 ```
 
 Installer les dépendances
